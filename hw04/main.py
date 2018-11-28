@@ -1,6 +1,6 @@
 import tornado.web
 import tornado.ioloop
-class aa(tornado.web.RequestHandler):
+class lianggege(tornado.web.RequestHandler):
     def get(self,a):
     
         a=int(a) if a is not None else 9
@@ -26,7 +26,7 @@ class aa(tornado.web.RequestHandler):
         
 if __name__ == '__main__':
     app=tornado.web.Application([
-        (r"(?:/([0-9])?)",aa)
+        (r"(?:/([0-9])?)",lianggege)
     ]
     )
     app.listen(8888)
